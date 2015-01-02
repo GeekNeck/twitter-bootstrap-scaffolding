@@ -33,17 +33,15 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        compile ":hibernate:$grailsVersion"
-		compile ":joda-time:1.4"
-        compile ":jquery:1.8.3"
-        compile ":resources:1.2"
+        compile ":hibernate4:4.3.5.5"
+		compile ":joda-time:1.5"
+        compile ":asset-pipeline:2.0.19"
+		compile ":scaffolding:2.1.2"
+		
+		runtime ":twitter-bootstrap:3.3.1"
+		runtime ":fields:1.4"
+        runtime ":jquery:1.11.1"
 
-		runtime ":twitter-bootstrap:2.3.1"
-		runtime ":fields:1.3"
-		runtime ":cache-headers:1.1.5"
-		runtime ":cached-resources:1.0"
-		runtime ":zipped-resources:1.0"
-
-        build ":tomcat:$grailsVersion"
+        build ":tomcat:7.0.55"
     }
 }

@@ -44,6 +44,24 @@ grails.views.gsp.sitemesh.preprocess = true
 // scaffolding templates configuration
 grails.scaffolding.templates.domainSuffix = 'Instance'
 
+// GSP settings
+//grails {
+//    views {
+//        gsp {
+//            encoding = 'UTF-8'
+//            htmlcodec = 'xml' // use xml escaping instead of HTML4 escaping
+//            codecs {
+//                expression = 'html' // escapes values inside ${}
+//                scriptlet = 'html' // escapes output from scriptlets in GSPs
+//                taglib = 'none' // escapes output from taglibs
+//                staticparts = 'none' // escapes output from static template parts
+//            }
+//        }
+//        // escapes all not-encoded output at final stage of outputting
+//        // filteringCodecForContentType.'text/html' = 'html'
+//    }
+//}
+
 // Set to false to use the new Grails 1.2 JSONBuilder in the render method
 grails.json.legacy.builder = false
 // enabled native2ascii conversion of i18n properties files
